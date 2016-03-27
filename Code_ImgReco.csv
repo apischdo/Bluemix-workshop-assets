@@ -1,0 +1,32 @@
+//First Edit template Node: Prompt images
+
+<h1>Welcome to my Face Detection app</h1>
+<H2>Recognize anyone?</H2>
+<form  action="{{req._parsedUrl.pathname}}">
+    <img src="http://asbarez.com/wp-content/uploads/2016/02/ibmwatson.jpg" height='200'/>
+    <img src="http://www.awaken.com/wp-content/uploads/2015/05/forbes.jpg" height='200'/>
+    <img src="https://www.commerce.gov/sites/commerce.gov/files/styles/scale_250w/public/media/images/profile/elizabethholmes.jpg?itok=DHmvdC-1" height='200'/>
+        <br/>Right-click one of the above images and select Copy image location and paste the URL in the box below.<br>Do an image search for faces, try multiple faces. After you click on an image, to the right it usually says "View image" click that to get the URL.<br/>
+    <br>Image URL: <input type="text" name="imageurl"/>
+    <input type="submit" value="Analyze"/>
+</form>
+
+
+//Second template node: Report faces
+
+<h1>Alchemy Image Analysis</h1>
+    <p>Analyzed image: {{payload}}<br/><img id="alchemy_image" src="{{payload}}" height="200"/></p>
+    {{^result}}
+        <P>No Face detected</P>
+    {{/result}}
+    <table border='1'>
+        <thead><tr><th>Age Range</th><th>Confidence</th><th>Gender</th><th>Confidence</th><th>Name</th></tr></thead>
+        {{#result}}<tr>
+            <td><b>{{age.ageRange}}</b></td><td><i>{{age.score}}</i></td>
+            <td>{{gender.gender}}</td><td>{{gender.score}}</td>
+            {{#identity}}<td>{{identity.name}} ({{identity.score}})</td>{{/identity}}
+        </tr>{{/result}}
+    </table>
+    <form  action="{{req._parsedUrl.pathname}}">
+        <br><input type="submit" value="Try again or go back to the home page"/>
+    </form>
