@@ -1,0 +1,19 @@
+//classify an image: Task 2
+curl -X POST -F "images_file=@fruitbowl.jpg" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?api_key=c21cff20d4f0d6f7f27782b4751bc1714dbf51b3&version=2016-05-20"
+
+//Detect faces in an image: Task 3
+curl -X POST -F "images_file=@prez.jpg" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/detect_faces?api_key=c21cff20d4f0d6f7f27782b4751bc1714dbf51b3&version=2016-05-20"
+
+
+//Recognize text in an image: Task 4
+curl -X POST -F "images_file=@sign.jpg" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/recognize_text?api_key=c21cff20d4f0d6f7f27782b4751bc1714dbf51b3&version=2016-05-20"
+
+
+//Create a Custom Classifier: Task 5
+curl -X POST -F "beagle_positive_examples=@Beagle.zip" -F "husky_positive_examples=@Husky.zip" -F "goldenretriever_positive_examples=@GoldenRetriever.zip" -F "negative_examples=@Cats.zip" -F "name=dogs" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classifiers?api_key=c21cff20d4f0d6f7f27782b4751bc1714dbf51b3&version=2016-05-20"
+
+//Training status update for Task 5 
+curl -X GET "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classifiers/dogs_176533402?api_key=c21cff20d4f0d6f7f27782b4751bc1714dbf51b3&version=2016-05-20"
+
+//Classify an image with a custom classifier: Task 6 ->goes with Task 5
+curl -X POST -F "images_file=@dogs.jpg" -F "parameters=@myparams.json" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?api_key=c21cff20d4f0d6f7f27782b4751bc1714dbf51b3&version=2016-05-20"
