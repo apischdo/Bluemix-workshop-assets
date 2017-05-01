@@ -9,7 +9,8 @@
         <br/>Right-click one of the above images and select Copy image location and paste the URL in the box below.<br>Do an image search for faces, try multiple faces. After you click on an image, to the right it usually says "View image" click that to get the URL.<br/>
     <br>Image URL: <input type="text" name="imageurl"/>
     <input type="submit" value="Analyze"/>
-</form>
+    </form>
+
 
 
 //Second template node: Report faces
@@ -30,3 +31,29 @@
     <form  action="{{req._parsedUrl.pathname}}">
         <br><input type="submit" value="Try again or go back to the home page"/>
     </form>
+   
+********************************************
+<h1>Visual recognition</h1>
+
+<!-- parse all images -->
+{{#result.images}}
+<p>Analyzed image: {{source_url}}<br/><img id="alchemy_image" src="{{source_url}}" height="200"/></p>
+
+{{^faces}}
+<P>No Face detected</P>
+{{/faces}}
+
+<table border='1'>
+<thead><tr><th>Age Range</th><th>Confidence</th><th>Gender</th><th>Confidence</th><th>Name</th></tr></thead>
+<!-- parse all faces -->
+{{#faces}}
+<tr>
+<td><b>{{age.min}} - {{age.max}}</b></td><td><i>{{age.score}}</i></td>
+<td>{{gender.gender}}</td><td>{{gender.score}}</td>
+{{#identity}}<td>{{identity.name}} ({{identity.score}})</td>{{/identity}}
+</tr>{{/faces}}
+</table>
+{{/result.images}}
+<form action="{{req._parsedUrl.pathname}}">
+<br><input type="submit" value="Try again or go back to the home page"/>
+</form>
