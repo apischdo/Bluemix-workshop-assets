@@ -1,0 +1,1138 @@
+{
+  "_id": "manyfaces/settings",
+  "_rev": "29-ea668774a7be0bd5a0e7e1eb4abf5701",
+  "settings": {
+    "bluemixConfig": {
+      "adminAuth": {
+        "username": "apischdo",
+        "password": "$2a$08$NLSuoEtFHBZS21Ky8Eq8cOdynEwF6YRrx3mZsl5LtRbIl0o4M1/Sq",
+        "allowAnonymous": false
+      }
+    },
+    "nodes": {
+      "node-red": {
+        "name": "node-red",
+        "version": "0.18.4",
+        "local": false,
+        "nodes": {
+          "sentiment": {
+            "name": "sentiment",
+            "types": [
+              "sentiment"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/analysis/72-sentiment.js"
+          },
+          "inject": {
+            "name": "inject",
+            "types": [
+              "inject"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/core/20-inject.js"
+          },
+          "catch": {
+            "name": "catch",
+            "types": [
+              "catch"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/core/25-catch.js"
+          },
+          "status": {
+            "name": "status",
+            "types": [
+              "status"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/core/25-status.js"
+          },
+          "debug": {
+            "name": "debug",
+            "types": [
+              "debug"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/core/58-debug.js"
+          },
+          "link": {
+            "name": "link",
+            "types": [
+              "link in",
+              "link out"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/core/60-link.js"
+          },
+          "function": {
+            "name": "function",
+            "types": [
+              "function"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/core/80-function.js"
+          },
+          "template": {
+            "name": "template",
+            "types": [
+              "template"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/core/80-template.js"
+          },
+          "delay": {
+            "name": "delay",
+            "types": [
+              "delay"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/core/89-delay.js"
+          },
+          "trigger": {
+            "name": "trigger",
+            "types": [
+              "trigger"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/core/89-trigger.js"
+          },
+          "comment": {
+            "name": "comment",
+            "types": [
+              "comment"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/core/90-comment.js"
+          },
+          "unknown": {
+            "name": "unknown",
+            "types": [
+              "unknown"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/core/98-unknown.js"
+          },
+          "tls": {
+            "name": "tls",
+            "types": [
+              "tls-config"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/io/05-tls.js"
+          },
+          "mqtt": {
+            "name": "mqtt",
+            "types": [
+              "mqtt in",
+              "mqtt out",
+              "mqtt-broker"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/io/10-mqtt.js"
+          },
+          "httpin": {
+            "name": "httpin",
+            "types": [
+              "http in",
+              "http response"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/io/21-httpin.js"
+          },
+          "httprequest": {
+            "name": "httprequest",
+            "types": [
+              "http request"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/io/21-httprequest.js"
+          },
+          "websocket": {
+            "name": "websocket",
+            "types": [
+              "websocket in",
+              "websocket out",
+              "websocket-listener",
+              "websocket-client"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/io/22-websocket.js"
+          },
+          "switch": {
+            "name": "switch",
+            "types": [
+              "switch"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/logic/10-switch.js"
+          },
+          "change": {
+            "name": "change",
+            "types": [
+              "change"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/logic/15-change.js"
+          },
+          "range": {
+            "name": "range",
+            "types": [
+              "range"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/logic/16-range.js"
+          },
+          "split": {
+            "name": "split",
+            "types": [
+              "split",
+              "join"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/logic/17-split.js"
+          },
+          "CSV": {
+            "name": "CSV",
+            "types": [
+              "csv"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/parsers/70-CSV.js"
+          },
+          "HTML": {
+            "name": "HTML",
+            "types": [
+              "html"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/parsers/70-HTML.js"
+          },
+          "JSON": {
+            "name": "JSON",
+            "types": [
+              "json"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/parsers/70-JSON.js"
+          },
+          "XML": {
+            "name": "XML",
+            "types": [
+              "xml"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/parsers/70-XML.js"
+          },
+          "YAML": {
+            "name": "YAML",
+            "types": [
+              "yaml"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/parsers/70-YAML.js"
+          },
+          "sort": {
+            "name": "sort",
+            "types": [
+              "sort"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/logic/18-sort.js"
+          },
+          "batch": {
+            "name": "batch",
+            "types": [
+              "batch"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red",
+            "file": "/home/vcap/app/node_modules/node-red/nodes/core/logic/19-batch.js"
+          }
+        }
+      },
+      "node-red-bluemix-nodes": {
+        "name": "node-red-bluemix-nodes",
+        "version": "1.1.10",
+        "local": false,
+        "nodes": {
+          "tcp": {
+            "name": "tcp",
+            "types": [
+              "tcp in",
+              "tcp out",
+              "tcp request"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-bluemix-nodes",
+            "file": "/home/vcap/app/node_modules/node-red-bluemix-nodes/io/31-tcpin-cf.js"
+          },
+          "udp": {
+            "name": "udp",
+            "types": [
+              "udp out"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-bluemix-nodes",
+            "file": "/home/vcap/app/node_modules/node-red-bluemix-nodes/io/32-udp-cf.js"
+          },
+          "mqlight": {
+            "name": "mqlight",
+            "types": [
+              "mqlight in",
+              "mqlight out"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-bluemix-nodes",
+            "file": "/home/vcap/app/node_modules/node-red-bluemix-nodes/mqlight/mqlight.js"
+          },
+          "mongodb": {
+            "name": "mongodb",
+            "types": [
+              "mongodb",
+              "mongodb out",
+              "mongodb in"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-bluemix-nodes",
+            "file": "/home/vcap/app/node_modules/node-red-bluemix-nodes/mongo/66-mongodb-cf.js"
+          },
+          "twilio": {
+            "name": "twilio",
+            "types": [
+              "twilio out",
+              "twilio-api"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-bluemix-nodes",
+            "file": "/home/vcap/app/node_modules/node-red-bluemix-nodes/twilio/56-twilio-cf.js"
+          },
+          "weather": {
+            "name": "weather",
+            "types": [
+              "weather_insights"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-bluemix-nodes",
+            "file": "/home/vcap/app/node_modules/node-red-bluemix-nodes/weather/weather_insights.js"
+          },
+          "businessrules": {
+            "name": "businessrules",
+            "types": [
+              "business-rules"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-bluemix-nodes",
+            "file": "/home/vcap/app/node_modules/node-red-bluemix-nodes/businessrules/v1.js"
+          },
+          "spssscoring": {
+            "name": "spssscoring",
+            "types": [
+              "predictive_analytics"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-bluemix-nodes",
+            "file": "/home/vcap/app/node_modules/node-red-bluemix-nodes/spss/spssscoring.js"
+          }
+        }
+      },
+      "node-red-contrib-scx-ibmiotapp": {
+        "name": "node-red-contrib-scx-ibmiotapp",
+        "version": "0.0.49",
+        "local": false,
+        "nodes": {
+          "ibmiotapp": {
+            "name": "ibmiotapp",
+            "types": [
+              "ibmiot",
+              "ibmiot out",
+              "ibmiot in"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-contrib-scx-ibmiotapp",
+            "file": "/home/vcap/app/node_modules/node-red-contrib-scx-ibmiotapp/application/97-iotnewapp-cf.js"
+          }
+        }
+      },
+      "node-red-node-cf-cloudant": {
+        "name": "node-red-node-cf-cloudant",
+        "version": "0.2.17",
+        "local": false,
+        "nodes": {
+          "cloudant-cf": {
+            "name": "cloudant-cf",
+            "types": [
+              "cloudant",
+              "cloudant out",
+              "cloudant in"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-cf-cloudant",
+            "file": "/home/vcap/app/node_modules/node-red-node-cf-cloudant/77-cloudant-cf.js"
+          }
+        }
+      },
+      "node-red-node-email": {
+        "name": "node-red-node-email",
+        "version": "0.1.27",
+        "local": false,
+        "nodes": {
+          "email": {
+            "name": "email",
+            "types": [
+              "e-mail",
+              "e-mail in"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-email",
+            "file": "/home/vcap/app/node_modules/node-red-node-email/61-email.js"
+          }
+        }
+      },
+      "node-red-node-feedparser": {
+        "name": "node-red-node-feedparser",
+        "version": "0.1.12",
+        "local": false,
+        "nodes": {
+          "feedparse": {
+            "name": "feedparse",
+            "types": [
+              "feedparse"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-feedparser",
+            "file": "/home/vcap/app/node_modules/node-red-node-feedparser/32-feedparse.js"
+          }
+        }
+      },
+      "node-red-node-openwhisk": {
+        "name": "node-red-node-openwhisk",
+        "version": "0.3.4",
+        "local": false,
+        "nodes": {
+          "openwhisk": {
+            "name": "openwhisk",
+            "types": [
+              "openwhisk-service",
+              "openwhisk-trigger",
+              "openwhisk-action"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-openwhisk",
+            "file": "/home/vcap/app/node_modules/node-red-node-openwhisk/openwhisk/openwhisk.js"
+          }
+        }
+      },
+      "node-red-node-rbe": {
+        "name": "node-red-node-rbe",
+        "version": "0.2.3",
+        "local": false,
+        "nodes": {
+          "rbe": {
+            "name": "rbe",
+            "types": [
+              "rbe"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-rbe",
+            "file": "/home/vcap/app/node_modules/node-red-node-rbe/rbe.js"
+          }
+        }
+      },
+      "node-red-node-twitter": {
+        "name": "node-red-node-twitter",
+        "version": "0.1.13",
+        "local": false,
+        "nodes": {
+          "twitter": {
+            "name": "twitter",
+            "types": [
+              "twitter-credentials",
+              "twitter in",
+              "twitter out"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-twitter",
+            "file": "/home/vcap/app/node_modules/node-red-node-twitter/27-twitter.js"
+          }
+        }
+      },
+      "node-red-node-watson": {
+        "name": "node-red-node-watson",
+        "version": "0.6.7",
+        "local": false,
+        "nodes": {
+          "watson-conversation-v1": {
+            "name": "watson-conversation-v1",
+            "types": [
+              "watson-conversation-v1"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/conversation/v1.js"
+          },
+          "watson-conversation-workspace-manager-v1": {
+            "name": "watson-conversation-workspace-manager-v1",
+            "types": [
+              "watson-conversation-v1-workspace-manager"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/conversation/v1-workspace-manager.js"
+          },
+          "watson-discovery-v1": {
+            "name": "watson-discovery-v1",
+            "types": [
+              "watson-discovery-v1"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/discovery/v1.js"
+          },
+          "watson-discovery-v1-query-builder": {
+            "name": "watson-discovery-v1-query-builder",
+            "types": [
+              "watson-discovery-v1-query-builder"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/discovery/v1-query-builder.js"
+          },
+          "watson-document-conversion-v1": {
+            "name": "watson-document-conversion-v1",
+            "types": [
+              "convert"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/document_conversion/v1.js"
+          },
+          "watson-concept-insights-v2": {
+            "name": "watson-concept-insights-v2",
+            "types": [
+              "watson-concept-insights-corpus",
+              "watson-concept-insights-upload-document",
+              "watson-concept-insights-search",
+              "watson-concept-insights-search-concepts",
+              "watson-concept-insights-related-concepts"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/concept_insights/v2.js"
+          },
+          "alchemy-date-extraction": {
+            "name": "alchemy-date-extraction",
+            "types": [
+              "alchemy-date-extraction"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/alchemy_date_extraction/v1.js"
+          },
+          "watson-dialog-v1": {
+            "name": "watson-dialog-v1",
+            "types": [
+              "service-dialog"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/dialog/v1.js"
+          },
+          "alchemy_language-v1": {
+            "name": "alchemy_language-v1",
+            "types": [
+              "alchemy-feature-extract"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/alchemy_language/v1.js"
+          },
+          "watson-language-translator-v2": {
+            "name": "watson-language-translator-v2",
+            "types": [
+              "watson-translator"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/language_translator/v2.js"
+          },
+          "watson-language-translator-identify-v2": {
+            "name": "watson-language-translator-identify-v2",
+            "types": [
+              "watson-language-translator-identify"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/language_translator_identify/v2.js"
+          },
+          "watson-language-translator-util-v2": {
+            "name": "watson-language-translator-util-v2",
+            "types": [
+              "watson-translator-util"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/language_translator_util/v2.js"
+          },
+          "watson-natural-language-classifier-v1": {
+            "name": "watson-natural-language-classifier-v1",
+            "types": [
+              "watson-natural-language-classifier"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/natural_language_classifier/v1.js"
+          },
+          "watson-natural-language-understanding-v1": {
+            "name": "watson-natural-language-understanding-v1",
+            "types": [
+              "natural-language-understanding"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/natural_language_understanding/v1.js"
+          },
+          "alchemy-news-v1": {
+            "name": "alchemy-news-v1",
+            "types": [
+              "news"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/alchemy_data_news/v1.js"
+          },
+          "watson-personality-insights-v3": {
+            "name": "watson-personality-insights-v3",
+            "types": [
+              "watson-personality-insights-v3"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/personality_insights/v3.js"
+          },
+          "watson-retrieve-and-rank-v1": {
+            "name": "watson-retrieve-and-rank-v1",
+            "types": [
+              "watson-retrieve-rank-credentials",
+              "watson-retrieve-rank-create-cluster",
+              "watson-retrieve-rank-cluster-settings",
+              "watson-retrieve-rank-upload-solr-configuration",
+              "watson-retrieve-rank-solr-configuration-settings",
+              "watson-retrieve-rank-solr-collection",
+              "watson-retrieve-rank-create-ranker",
+              "watson-retrieve-rank-ranker-settings",
+              "watson-retrieve-rank-search-and-rank"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/retrieve_and_rank/v1.js"
+          },
+          "watson-speech-to-text-v1": {
+            "name": "watson-speech-to-text-v1",
+            "types": [
+              "watson-speech-to-text"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/speech_to_text/v1.js"
+          },
+          "watson-speech-to-text-corpus-builder-v1": {
+            "name": "watson-speech-to-text-corpus-builder-v1",
+            "types": [
+              "watson-speech-to-text-v1-query-builder"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/speech_to_text/v1-corpus-builder.js"
+          },
+          "watson-text-to-speech-v1": {
+            "name": "watson-text-to-speech-v1",
+            "types": [
+              "watson-text-to-speech"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/text_to_speech/v1.js"
+          },
+          "watson-text-to-speech-corpus-builder-v1": {
+            "name": "watson-text-to-speech-corpus-builder-v1",
+            "types": [
+              "watson-text-to-speech-v1-query-builder"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/text_to_speech/v1-corpus-builder.js"
+          },
+          "watson-tone-analyzer-v3": {
+            "name": "watson-tone-analyzer-v3",
+            "types": [
+              "watson-tone-analyzer-v3"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/tone_analyzer/v3.js"
+          },
+          "watson-tradeoff-analytics-v1": {
+            "name": "watson-tradeoff-analytics-v1",
+            "types": [
+              "watson-tradeoff-analytics"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/tradeoff_analytics/v1.js"
+          },
+          "watson-visual-recognition-v3": {
+            "name": "watson-visual-recognition-v3",
+            "types": [
+              "visual-recognition-v3",
+              "visual-recognition-util-v3"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/visual_recognition/v3.js"
+          },
+          "watson-similarity-search-v3": {
+            "name": "watson-similarity-search-v3",
+            "types": [
+              "similarity-search-v3",
+              "similarity-search-util-v3"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/similarity_search/v3.js"
+          },
+          "alchemy-vision-v1": {
+            "name": "alchemy-vision-v1",
+            "types": [
+              "alchemy-image-analysis"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/alchemy_vision/v1.js"
+          },
+          "watson-discovery-v1-document-loader": {
+            "name": "watson-discovery-v1-document-loader",
+            "types": [
+              "watson-discovery-v1-document-loader"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-node-watson",
+            "file": "/home/vcap/app/node_modules/node-red-node-watson/services/discovery/v1-document-loader.js"
+          }
+        }
+      },
+      "node-red-nodes-cf-sqldb-dashdb": {
+        "name": "node-red-nodes-cf-sqldb-dashdb",
+        "version": "0.2.28",
+        "local": false,
+        "nodes": {
+          "sqldb-dashdb-cf": {
+            "name": "sqldb-dashdb-cf",
+            "types": [
+              "dashDB",
+              "dashDB out",
+              "dashDB in"
+            ],
+            "enabled": true,
+            "local": false,
+            "module": "node-red-nodes-cf-sqldb-dashdb",
+            "file": "/home/vcap/app/node_modules/node-red-nodes-cf-sqldb-dashdb/98-sqldb-dashdb-cf.js"
+          }
+        }
+      },
+      "node-red-dashboard": {
+        "name": "node-red-dashboard",
+        "version": "2.6.2",
+        "local": true,
+        "nodes": {
+          "ui_base": {
+            "name": "ui_base",
+            "types": [
+              "ui_base"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_base.js"
+          },
+          "ui_button": {
+            "name": "ui_button",
+            "types": [
+              "ui_button"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_button.js"
+          },
+          "ui_dropdown": {
+            "name": "ui_dropdown",
+            "types": [
+              "ui_dropdown"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_dropdown.js"
+          },
+          "ui_switch": {
+            "name": "ui_switch",
+            "types": [
+              "ui_switch"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_switch.js"
+          },
+          "ui_slider": {
+            "name": "ui_slider",
+            "types": [
+              "ui_slider"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_slider.js"
+          },
+          "ui_numeric": {
+            "name": "ui_numeric",
+            "types": [
+              "ui_numeric"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_numeric.js"
+          },
+          "ui_text_input": {
+            "name": "ui_text_input",
+            "types": [
+              "ui_text_input"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_text_input.js"
+          },
+          "ui_date_picker": {
+            "name": "ui_date_picker",
+            "types": [
+              "ui_date_picker"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_date_picker.js"
+          },
+          "ui_colour_picker": {
+            "name": "ui_colour_picker",
+            "types": [
+              "ui_colour_picker"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_colour_picker.js"
+          },
+          "ui_form": {
+            "name": "ui_form",
+            "types": [
+              "ui_form"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_form.js"
+          },
+          "ui_text": {
+            "name": "ui_text",
+            "types": [
+              "ui_text"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_text.js"
+          },
+          "ui_gauge": {
+            "name": "ui_gauge",
+            "types": [
+              "ui_gauge"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_gauge.js"
+          },
+          "ui_chart": {
+            "name": "ui_chart",
+            "types": [
+              "ui_chart"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_chart.js"
+          },
+          "ui_audio": {
+            "name": "ui_audio",
+            "types": [
+              "ui_audio"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_audio.js"
+          },
+          "ui_toast": {
+            "name": "ui_toast",
+            "types": [
+              "ui_toast"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_toast.js"
+          },
+          "ui_ui_control": {
+            "name": "ui_ui_control",
+            "types": [
+              "ui_ui_control"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_ui_control.js"
+          },
+          "ui_template": {
+            "name": "ui_template",
+            "types": [
+              "ui_template"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_template.js"
+          },
+          "ui_link": {
+            "name": "ui_link",
+            "types": [
+              "ui_link"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_link.js"
+          },
+          "ui_tab": {
+            "name": "ui_tab",
+            "types": [
+              "ui_tab"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_tab.js"
+          },
+          "ui_group": {
+            "name": "ui_group",
+            "types": [
+              "ui_group"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-dashboard",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-dashboard/nodes/ui_group.js"
+          }
+        }
+      },
+      "node-red-contrib-web-worldmap": {
+        "name": "node-red-contrib-web-worldmap",
+        "version": "1.1.9",
+        "local": true,
+        "nodes": {
+          "worldmap": {
+            "name": "worldmap",
+            "types": [
+              "worldmap",
+              "worldmap in",
+              "worldmap-tracks"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-contrib-web-worldmap",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-contrib-web-worldmap/worldmap.js"
+          }
+        }
+      },
+      "node-red-contrib-play-audio": {
+        "name": "node-red-contrib-play-audio",
+        "version": "2.2.4",
+        "local": true,
+        "nodes": {
+          "play-audio": {
+            "name": "play-audio",
+            "types": [
+              "play audio"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-contrib-play-audio",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-contrib-play-audio/play-audio.js"
+          }
+        }
+      },
+      "node-red-contrib-telegrambot": {
+        "name": "node-red-contrib-telegrambot",
+        "version": "3.1.1",
+        "local": true,
+        "nodes": {
+          "telegrambot": {
+            "name": "telegrambot",
+            "types": [
+              "telegram bot",
+              "telegram receiver",
+              "telegram command",
+              "telegram callback_query",
+              "telegram sender",
+              "telegram reply"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-contrib-telegrambot",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-contrib-telegrambot/telegrambot/99-telegrambot.js"
+          }
+        }
+      },
+      "node-red-contrib-func-exec": {
+        "name": "node-red-contrib-func-exec",
+        "version": "0.1.6",
+        "local": true,
+        "nodes": {
+          "func-exec": {
+            "name": "func-exec",
+            "types": [
+              "func-exec"
+            ],
+            "enabled": true,
+            "local": true,
+            "module": "node-red-contrib-func-exec",
+            "file": "/home/vcap/app/.node-red/node_modules/node-red-contrib-func-exec/func-exec.js"
+          }
+        }
+      }
+    },
+    "_credentialSecret": "32d711a2b1991fb83c3248538aed369997c71170df354422e079c991e27d8045",
+    "users": {
+      "apischdo": {
+        "editor": {
+          "view": {
+            "view-grid-size": "20",
+            "view-node-status": true,
+            "view-show-tips": true,
+            "view-snap-grid": false,
+            "view-show-grid": false
+          }
+        },
+        "menu-menu-item-sidebar": false
+      }
+    }
+  }
+}
